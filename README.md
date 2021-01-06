@@ -9,3 +9,25 @@ flag:`FLAG{Corgi is cutest aniaml on the earth >////////<}`
 ### 3 television
 用strings看
 flag:`FLAG{PuRe_R@ND0M_DaTa_Fr0M/D3V/UR@ND0M}`
+### 4 meow
+binwalk開 發現裡面有夾zip
+foremost 分離出來
+```
+.
+├── audit.txt
+├── png
+│   ├── 00000000.png
+└── zip
+    └── 00000094.zip
+
+```
+發現`00000094.zip`裡的png的crc32是`cdad52bd`，跟`00000000.png`的crc32一樣
+利用明文攻擊 先把`00000000.png`壓成`plane.zip`
+> ./pkcrack -C ../output/zip/00000094.zip -c meow/t39.1997-6/p296x100/10173502_279586372215628_1950740854_n.png -P ../output/png/plain.zip -p 00000000.png -d res.zip -a
+```
+-C:要破解的目标文件(含路径)
+-c:破解文件中的明文文件的名字(其路径不包括系统路径,从zip文件一层开始)
+-P:压缩后的明文文件
+-p:压缩的明文文件中明文文件的名字(也就是readme.txt在readme.zip中的位置)
+```
+flag:`FLAG{pkcrack is your frien. MEOW, MEOW, MEOW~}`
