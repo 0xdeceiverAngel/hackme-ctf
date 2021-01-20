@@ -31,3 +31,10 @@ foremost 分離出來
 -p:压缩的明文文件中明文文件的名字(也就是readme.txt在readme.zip中的位置)
 ```
 flag:`FLAG{pkcrack is your frien. MEOW, MEOW, MEOW~}`
+### 5 where is flag
+> cat flag|grep -oE "FLAG{[a-zA-Z0-9_]*}"
+flag:`FLAG{VizQLeu9M3aybJBA3f1AgFROGyuTLXZ2oeRbKf1Agf1AgFLAG9hBTI}`
+
+### 8 pusheen.txt
+給你一堆貓貓，黑貓當成1、白貓當成0，binay to string
+flag:`FLAG{Pusheen OIOOOIIOOIOOIIOOOIOOOOOIOIOOOIII Cute}`
