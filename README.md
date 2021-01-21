@@ -38,3 +38,7 @@ flag:`FLAG{VizQLeu9M3aybJBA3f1AgFROGyuTLXZ2oeRbKf1Agf1AgFLAG9hBTI}`
 ### 8 pusheen.txt
 給你一堆貓貓，黑貓當成1、白貓當成0，binay to string
 flag:`FLAG{Pusheen OIOOOIIOOIOOIIOOOIOOOOOIOIOOOIII Cute}`
+### 9 big
+- 爆破用regex找flag
+- 或是用改hex拿掉重複的，然後改file header的crc32或是foot 看xz的文件應該是這樣沒錯(?)(我沒弄)
+flag:`FLAG{Really long file}`
