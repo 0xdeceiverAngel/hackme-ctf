@@ -37,8 +37,18 @@ flag:`FLAG{VizQLeu9M3aybJBA3f1AgFROGyuTLXZ2oeRbKf1Agf1AgFLAG9hBTI}`
 
 ### 8 pusheen.txt
 給你一堆貓貓，黑貓當成1、白貓當成0，binay to string
-flag:`FLAG{Pusheen OIOOOIIOOIOOIIOOOIOOOOOIOIOOOIII Cute}`
+flag:`FLAG{Pusheen OIOOOIIOOIOOIIOOOIOOOgOOIOIOOOIII Cute}`
 ### 9 big
 - 爆破用regex找flag
 - 或是用改hex拿掉重複的，然後改file header的crc32或是foot 看xz的文件應該是這樣沒錯(?)(我沒弄)
 flag:`FLAG{Really long file}`
+### 10 otaku
+### 11 buzzing
+### 12 drvtry vpfr
+給你神奇的字，其實就是鍵盤打字時往旁邊的按鍵按
+flag:`FLAG{Shift My Keyboard And Typing Something}`
+### 13 bzbz
+找bilibli外洩的原始碼
+https://github.com/fitlivingmm/bilibili/blob/master/go-common/app/admin/ep/melloi/cmd/convey-test.toml
+裡面有帳密、登入就好
+flag:`FLAG{Let's learn golang from bilibili}`
